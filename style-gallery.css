@@ -1,0 +1,33 @@
+section.main-content {
+    width: 80%;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    grid-template-rows: repeat(18, 4%);
+    column-gap: 1vw;
+    row-gap: 1vw;
+    width: 80%;
+    padding-left: 4.5vw;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+div.gallery div {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 576px)
+{
+    div.gallery {
+        grid-template-columns: 100%;
+        grid-template-rows: 2.81%;
+        padding: 0;
+    }
+}
